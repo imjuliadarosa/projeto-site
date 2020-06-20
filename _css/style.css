@@ -6,19 +6,27 @@ header#header01{
     border-bottom: 1px gray solid;
     height: 100px;
 }
-header#header01 img{
+header#header01 h1{
     position: absolute;
-    width: 150px;
-    left: 250px
+    top: 100px;
+    left: 40%;
+    text-decoration: none;
+}
+header#header01 a{
+    color: black;
+    text-decoration: none;
+}
+header#header01 img{
+    position: relative;
+    width: 135px;
 }
 nav{
     display: block;
 }
 nav ul{
     list-style: none;
-    position: relative;
-    top:100px;
-    left: 35%;
+    position: absolute;
+    top: 0px;
 }
 nav li{
     display: inline-block;
@@ -44,57 +52,33 @@ body{
 }
 main{
     background-color: #ffff99;
-    width: 70%;
+    width: 700px;
     padding: 5%;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(25, 26, 27, 0.884);
 }
-p{
-    text-align: justify;
-    text-indent: 50px;
-}
-img {
-}
 section#profile{
-    margin: 5%;
-    float:top;
+    display: block;
 }
 section#profile p{
-    position: absolute;
-    top:60%;
-    left: 35%;
-    right: 30%;
+    width: 400px;
+    text-align: justify;
+    text-indent: 50px;
+    float: right;
+}
+section#contact{
+    display: block;
 }
 figure.profile img{
     width:150px;
     height:150px;
     border-radius:50%;
     background-color: #FFC8CC;
+    float: left;
 }
-
-figure.foto-legenda{
-    margin: 0% 25% 0% 25%;
-    position: relative;
-    border: 8px solid white;
-    box-shadow: 1px 1px 4px black;
-    background-color: #FFC8CC;
+footer{
+    clear: both;
 }
-figure.foto-legenda img{
-    width: 100%;
-    height: auto;
-}
-figure.foto-legenda figcaption{
-    opacity: 0;
-    position: absolute;
-    top:0px;
-    background-color: rgba(0,0,0,.4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
-}
-figure.foto-legenda:hover figcaption{
-    opacity: 100%;
+footer p{
+    text-align: center;
 }
